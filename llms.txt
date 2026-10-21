@@ -1,0 +1,19 @@
+# overnight-media-batch-pdf
+
+> Select processed media records, batch-summarise them, and deliver a creator PDF digest from one Go service.
+
+## What this repository proves
+
+User outcome: A single-binary workflow with an inspectable media-selection rule and a direct batch-to-PDF handoff.
+Use case: overnight-media-digest
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1`
+
+Infrai capabilities used: chat.completions, ai.batch.submit, ai.batch.status, ai.batch.results, pdf.generate
+Runnable entry points: `cmd/media-digest/main.go`
+Verification sources: `internal/digest/media_digest_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

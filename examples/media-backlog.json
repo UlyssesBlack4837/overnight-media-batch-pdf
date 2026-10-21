@@ -1,0 +1,23 @@
+{
+  "run_id": "2026-09-17",
+  "records": [
+    {
+      "asset_id": "asset-7",
+      "creator_id": "creator-2",
+      "title": "Night Shift",
+      "kind": "video",
+      "duration_seconds": 180,
+      "processing_job": "completed",
+      "summary_sent": false
+    },
+    {
+      "asset_id": "asset-8",
+      "creator_id": "creator-2",
+      "title": "Studio Upload",
+      "kind": "audio",
+      "duration_seconds": 30,
+      "processing_job": "processing",
+      "summary_sent": false
+    }
+  ]
+}
